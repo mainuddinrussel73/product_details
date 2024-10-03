@@ -1,21 +1,855 @@
 [
-    {
-      "id": 1,
-      "name": "Product 1",
-      "price": 99.99,
-      "description": "Description of Product 1"
-    },
-    {
-      "id": 2,
-      "name": "Product 2",
-      "price": 149.99,
-      "description": "Description of Product 2"
-    },
-    {
-      "id": 3,
-      "name": "Product 3",
-      "price": 199.99,
-      "description": "Description of Product 3"
-    }
-  ]
-  
+  {
+    "bookId": 1,
+    "bookName": "The Midnight Library",
+    "author": "Matt Haig",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1602190253i/52578297.jpg",
+    "review": "A heartfelt exploration of life's endless possibilities, full of hope and meaning.",
+    "totalPages": 304,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": [
+      "Philosophical",
+      "Fantasy",
+      "Self-Discovery"
+    ],
+    "publisher": "Canongate Books",
+    "yearOfPublishing": 2020,
+    "downloadLink": "https://drive.google.com/file/d/1IUCCpKava348KcqVeA46n3Gx7y-W9_QR/view?usp=drive_link"
+  },
+  {
+    "bookId": 2,
+    "bookName": "Becoming",
+    "author": "Michelle Obama",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1528206996i/38746485.jpg",
+    "review": "An inspiring memoir that traces the life of one of America's most iconic first ladies.",
+    "totalPages": 448,
+    "rating": 4.8,
+    "category": "Memoir",
+    "tags": [
+      "Inspiring",
+      "Political",
+      "Biography"
+    ],
+    "publisher": "Crown Publishing",
+    "yearOfPublishing": 2018,
+    "downloadLink": "https://drive.google.com/file/d/1IUCCpKava348KcqVeA46n3Gx7y-W9_QR/view?usp=drive_link"
+  },
+  {
+    "bookId": 3,
+    "bookName": "Educated",
+    "author": "Tara Westover",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1506026635i/35133922.jpg",
+    "review": "A powerful memoir about growing up in rural isolation and the transformative power of education.",
+    "totalPages": 334,
+    "rating": 4.7,
+    "category": "Biography",
+    "tags": [
+      "Memoir",
+      "Education",
+      "Family"
+    ],
+    "publisher": "Random House",
+    "yearOfPublishing": 2018,
+    "downloadLink": "https://drive.google.com/file/d/1IUCCpKava348KcqVeA46n3Gx7y-W9_QR/view?usp=drive_link"
+  },
+  {
+    "bookId": 4,
+    "bookName": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1582135294i/36809135.jpg",
+    "review": "A mesmerizing tale of survival, mystery, and the beauty of the natural world.",
+    "totalPages": 368,
+    "rating": 4.6,
+    "category": "Mystery",
+    "tags": [
+      "Nature",
+      "Crime",
+      "Romance"
+    ],
+    "publisher": "G.P. Putnam's Sons",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 5,
+    "bookName": "Atomic Habits",
+    "author": "James Clear",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1655988385i/40121378.jpg",
+    "review": "A game-changing guide to forming good habits and breaking bad ones, grounded in science.",
+    "totalPages": 320,
+    "rating": 4.9,
+    "category": "Self-Help",
+    "tags": [
+      "Productivity",
+      "Self-Improvement",
+      "Behavior"
+    ],
+    "publisher": "Penguin Random House",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 6,
+    "bookName": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1703329310i/23692271.jpg",
+    "review": "A sweeping exploration of human history from the Stone Age to modern times, both insightful and thought-provoking.",
+    "totalPages": 443,
+    "rating": 4.7,
+    "category": "History",
+    "tags": [
+      "Anthropology",
+      "Evolution",
+      "Civilization"
+    ],
+    "publisher": "Harper",
+    "yearOfPublishing": 2014
+  },
+  {
+    "bookId": 7,
+    "bookName": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1668782119i/40097951.jpg",
+    "review": "A gripping psychological thriller that keeps you guessing until the very end.",
+    "totalPages": 336,
+    "rating": 4.4,
+    "category": "Thriller",
+    "tags": [
+      "Suspense",
+      "Psychological",
+      "Mystery"
+    ],
+    "publisher": "Celadon Books",
+    "yearOfPublishing": 2019
+  },
+  {
+    "bookId": 8,
+    "bookName": "Dune",
+    "author": "Frank Herbert",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1555447414i/44767458.jpg",
+    "review": "A sci-fi classic that masterfully weaves together politics, religion, and ecology in a futuristic desert world.",
+    "totalPages": 412,
+    "rating": 4.8,
+    "category": "Science Fiction",
+    "tags": [
+      "Space",
+      "Adventure",
+      "Epic"
+    ],
+    "publisher": "Chilton Books",
+    "yearOfPublishing": 1965
+  },
+  {
+    "bookId": 9,
+    "bookName": "The Alchemist",
+    "author": "Paulo Coelho",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654371463i/18144590.jpg",
+    "review": "A timeless tale about following one's dreams and listening to the heart, filled with deep wisdom.",
+    "totalPages": 208,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": [
+      "Spiritual",
+      "Adventure",
+      "Philosophical"
+    ],
+    "publisher": "HarperOne",
+    "yearOfPublishing": 1988
+  },
+  {
+    "bookId": 10,
+    "bookName": "The Power of Now",
+    "author": "Eckhart Tolle",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1689947880i/6708.jpg",
+    "review": "A spiritual guidebook that focuses on living in the present moment to achieve inner peace.",
+    "totalPages": 236,
+    "rating": 4.5,
+    "category": "Self-Help",
+    "tags": [
+      "Spiritual",
+      "Mindfulness",
+      "Philosophy"
+    ],
+    "publisher": "New World Library",
+    "yearOfPublishing": 1997
+  },
+  {
+    "bookId": 11,
+    "bookName": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1465761302i/28257707.jpg",
+    "review": "A counterintuitive approach to living a good life by embracing one's limitations and focusing on what truly matters.",
+    "totalPages": 224,
+    "rating": 4.1,
+    "category": "Self-Help",
+    "tags": [
+      "Philosophy",
+      "Self-Improvement",
+      "Motivational"
+    ],
+    "publisher": "HarperOne",
+    "yearOfPublishing": 2016
+  },
+  {
+    "bookId": 12,
+    "bookName": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1582135294i/36809135.jpg",
+    "review": "A murder mystery intertwined with the coming-of-age story of a girl growing up in the swamps of North Carolina.",
+    "totalPages": 370,
+    "rating": 4.4,
+    "category": "Fiction",
+    "tags": [
+      "Mystery",
+      "Historical",
+      "Romance"
+    ],
+    "publisher": "G.P. Putnam's Sons",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 13,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553383690i/2657.jpg",
+    "review": "A compelling story of race, injustice, and morality set in the American South.",
+    "totalPages": 324,
+    "rating": 4.8,
+    "category": "Fiction",
+    "tags": [
+      "Classic",
+      "Civil Rights",
+      "Courtroom Drama"
+    ],
+    "publisher": "J.B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": 14,
+    "bookName": "1984",
+    "author": "George Orwell",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1657781256i/61439040.jpg",
+    "review": "A dystopian novel about totalitarianism and surveillance, exploring the dangers of absolute power.",
+    "totalPages": 328,
+    "rating": 4.7,
+    "category": "Science Fiction",
+    "tags": [
+      "Dystopia",
+      "Political",
+      "Philosophical"
+    ],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949
+  },
+  {
+    "bookId": 15,
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1320399351i/1885.jpg",
+    "review": "A classic romantic novel that delves into issues of class, marriage, and morality.",
+    "totalPages": 279,
+    "rating": 4.5,
+    "category": "Romance",
+    "tags": [
+      "Classic",
+      "Love",
+      "Social Commentary"
+    ],
+    "publisher": "T. Egerton",
+    "yearOfPublishing": 1813
+  },
+  {
+    "bookId": 16,
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1398034300i/5107.jpg",
+    "review": "A rebellious tale of teenage angst and alienation in post-war America.",
+    "totalPages": 277,
+    "rating": 4,
+    "category": "Fiction",
+    "tags": [
+      "Classic",
+      "Coming of Age",
+      "Psychological"
+    ],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+  },
+  {
+    "bookId": 17,
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1490528560i/4671.jpg",
+    "review": "A story of wealth, love, and the American dream set in the Roaring Twenties.",
+    "totalPages": 180,
+    "rating": 4.2,
+    "category": "Fiction",
+    "tags": [
+      "Classic",
+      "Tragedy",
+      "Historical"
+    ],
+    "publisher": "Charles Scribner's Sons",
+    "yearOfPublishing": 1925
+  },
+  {
+    "bookId": 18,
+    "bookName": "Brave New World",
+    "author": "Aldous Huxley",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1575509280i/5129.jpg",
+    "review": "A dystopian future where society is controlled by technology, drugs, and conditioning.",
+    "totalPages": 268,
+    "rating": 4.5,
+    "category": "Science Fiction",
+    "tags": [
+      "Dystopia",
+      "Philosophy",
+      "Classic"
+    ],
+    "publisher": "Chatto & Windus",
+    "yearOfPublishing": 1932
+  },
+  {
+    "bookId": 19,
+    "bookName": "The Road",
+    "author": "Cormac McCarthy",
+    "image": "https://images.squarespace-cdn.com/content/v1/5291ec9be4b023ca755fdd31/1607705115800-T1T82NV5BSELSJQDW63U/the+road+cover.jpg?format=1500w",
+    "review": "A post-apocalyptic tale of survival and the bond between father and son.",
+    "totalPages": 287,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": [
+      "Post-Apocalyptic",
+      "Adventure",
+      "Literary Fiction"
+    ],
+    "publisher": "Alfred A. Knopf",
+    "yearOfPublishing": 2006
+  },
+  {
+    "bookId": 20,
+    "bookName": "The Handmaid's Tale",
+    "author": "Margaret Atwood",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1578028274i/38447.jpg",
+    "review": "A haunting vision of a totalitarian regime where women are subjugated.",
+    "totalPages": 311,
+    "rating": 4.6,
+    "category": "Dystopia",
+    "tags": [
+      "Feminism",
+      "Political Fiction",
+      "Classic"
+    ],
+    "publisher": "McClelland and Stewart",
+    "yearOfPublishing": 1985
+  },
+  {
+    "bookId": 21,
+    "bookName": "The Fellowship of the Ring",
+    "author": "J.R.R. Tolkien",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654215925i/61215351.jpg",
+    "review": "The first part of an epic fantasy journey to destroy the One Ring.",
+    "totalPages": 423,
+    "rating": 4.9,
+    "category": "Fantasy",
+    "tags": [
+      "Adventure",
+      "Epic Fantasy",
+      "Classic"
+    ],
+    "publisher": "George Allen & Unwin",
+    "yearOfPublishing": 1954
+  },
+  {
+    "bookId": 22,
+    "bookName": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1447303603i/2767052.jpg",
+    "review": "In a dystopian future, teens are forced to fight to the death in an annual event.",
+    "totalPages": 374,
+    "rating": 4.4,
+    "category": "Young Adult",
+    "tags": [
+      "Dystopia",
+      "Action",
+      "Survival"
+    ],
+    "publisher": "Scholastic Press",
+    "yearOfPublishing": 2008
+  },
+  {
+    "bookId": 23,
+    "bookName": "The Book Thief",
+    "author": "Markus Zusak",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1522157426i/19063.jpg",
+    "review": "A story of a young girl's love for books in Nazi Germany.",
+    "totalPages": 552,
+    "rating": 4.5,
+    "category": "Historical Fiction",
+    "tags": [
+      "World War II",
+      "Young Adult",
+      "Historical"
+    ],
+    "publisher": "Knopf",
+    "yearOfPublishing": 2005
+  },
+  {
+    "bookId": 24,
+    "bookName": "The Girl on the Train",
+    "author": "Paula Hawkins",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1490903702i/22557272.jpg",
+    "review": "A psychological thriller that keeps you on the edge of your seat.",
+    "totalPages": 395,
+    "rating": 4.1,
+    "category": "Thriller",
+    "tags": [
+      "Suspense",
+      "Mystery",
+      "Psychological"
+    ],
+    "publisher": "Riverhead Books",
+    "yearOfPublishing": 2015
+  },
+  {
+    "bookId": 25,
+    "bookName": "A Game of Thrones",
+    "author": "George R.R. Martin",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1376738412i/18337259.jpg",
+    "review": "The first book in the A Song of Ice and Fire series, set in the fantasy world of Westeros.",
+    "totalPages": 694,
+    "rating": 4.6,
+    "category": "Fantasy",
+    "tags": [
+      "Epic Fantasy",
+      "Adventure",
+      "Politics"
+    ],
+    "publisher": "Bantam Books",
+    "yearOfPublishing": 1996
+  },
+  {
+    "bookId": 26,
+    "bookName": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1387124618i/9361589.jpg",
+    "review": "A magical story of two young illusionists in a mysterious circus that appears only at night.",
+    "totalPages": 387,
+    "rating": 4.2,
+    "category": "Fantasy",
+    "tags": [
+      "Magic",
+      "Romance",
+      "Historical Fiction"
+    ],
+    "publisher": "Doubleday",
+    "yearOfPublishing": 2011
+  },
+  {
+    "bookId": 27,
+    "bookName": "Gone Girl",
+    "author": "Gillian Flynn",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1554086139i/19288043.jpg",
+    "review": "A twisted psychological thriller about a marriage gone awry.",
+    "totalPages": 432,
+    "rating": 4,
+    "category": "Thriller",
+    "tags": [
+      "Psychological",
+      "Suspense",
+      "Mystery"
+    ],
+    "publisher": "Crown Publishing",
+    "yearOfPublishing": 2012
+  },
+  {
+    "bookId": 28,
+    "bookName": "The Goldfinch",
+    "author": "Donna Tartt",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1378710146i/17333223.jpg",
+    "review": "A gripping coming-of-age novel centered on a boy whose life is turned upside down by tragedy.",
+    "totalPages": 771,
+    "rating": 4.4,
+    "category": "Fiction",
+    "tags": [
+      "Drama",
+      "Literary Fiction",
+      "Thriller"
+    ],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 2013
+  },
+  {
+    "bookId": 29,
+    "bookName": "The Martian",
+    "author": "Andy Weir",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1413706054i/18007564.jpg",
+    "review": "A gripping sci-fi survival story about an astronaut stranded on Mars.",
+    "totalPages": 369,
+    "rating": 4.7,
+    "category": "Science Fiction",
+    "tags": [
+      "Survival",
+      "Space",
+      "Thriller"
+    ],
+    "publisher": "Crown Publishing",
+    "yearOfPublishing": 2014
+  },
+  {
+    "bookId": 30,
+    "bookName": "Life of Pi",
+    "author": "Yann Martel",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1631251689i/4214.jpg",
+    "review": "A philosophical and adventurous tale of survival at sea with a Bengal tiger.",
+    "totalPages": 319,
+    "rating": 4.3,
+    "category": "Adventure",
+    "tags": [
+      "Philosophy",
+      "Survival",
+      "Adventure"
+    ],
+    "publisher": "Canongate Books",
+    "yearOfPublishing": 2001
+  },
+  {
+    "bookId": 31,
+    "bookName": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546103428i/5297.jpg",
+    "review": "A gothic novel that explores themes of aestheticism, moral decay, and the quest for eternal youth.",
+    "totalPages": 254,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": [
+      "Classic",
+      "Philosophy",
+      "Tragedy"
+    ],
+    "publisher": "Lippincott's Monthly Magazine",
+    "yearOfPublishing": 1890
+  },
+  {
+    "bookId": 32,
+    "bookName": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1382846449i/7144.jpg",
+    "review": "A psychological exploration of guilt, morality, and redemption in 19th-century Russia.",
+    "totalPages": 671,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": [
+      "Classic",
+      "Philosophy",
+      "Psychological"
+    ],
+    "publisher": "The Russian Messenger",
+    "yearOfPublishing": 1866
+  },
+  {
+    "bookId": 33,
+    "bookName": "Frankenstein",
+    "author": "Mary Shelley",
+    "image": "https://m.media-amazon.com/images/I/41z7ukJFnSL._SY445_SX342_.jpg",
+    "review": "A gothic novel that explores themes of ambition, humanity, and the consequences of scientific experimentation.",
+    "totalPages": 280,
+    "rating": 4.2,
+    "category": "Horror",
+    "tags": [
+      "Science Fiction",
+      "Gothic",
+      "Classic"
+    ],
+    "publisher": "Lackington, Hughes, Harding, Mavor & Jones",
+    "yearOfPublishing": 1818
+  },
+  {
+    "bookId": 34,
+    "bookName": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "image": "https://m.media-amazon.com/images/I/418jD+Rsd5L._SY445_SX342_.jpg",
+    "review": "A fantasy novel that follows the adventures of Bilbo Baggins in a world of magic and dragons.",
+    "totalPages": 310,
+    "rating": 4.6,
+    "category": "Fantasy",
+    "tags": [
+      "Adventure",
+      "Fantasy",
+      "Classic"
+    ],
+    "publisher": "George Allen & Unwin",
+    "yearOfPublishing": 1937
+  },
+  {
+    "bookId": 35,
+    "bookName": "Dracula",
+    "author": "Bram Stoker",
+    "image": "https://m.media-amazon.com/images/I/41l9+tnAiTL._SY445_SX342_.jpg",
+    "review": "A gothic horror novel that tells the story of Count Dracula's attempt to move to England.",
+    "totalPages": 418,
+    "rating": 4,
+    "category": "Horror",
+    "tags": [
+      "Classic",
+      "Vampires",
+      "Gothic"
+    ],
+    "publisher": "Archibald Constable and Company",
+    "yearOfPublishing": 1897
+  },
+  {
+    "bookId": 36,
+    "bookName": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "image": "https://m.media-amazon.com/images/I/5179PDOcmJL._SY445_SX342_.jpg",
+    "review": "A philosophical novel that explores free will, morality, and faith through the lives of three brothers.",
+    "totalPages": 796,
+    "rating": 4.7,
+    "category": "Philosophy",
+    "tags": [
+      "Classic",
+      "Psychological",
+      "Philosophy"
+    ],
+    "publisher": "The Russian Messenger",
+    "yearOfPublishing": 1880
+  },
+  {
+    "bookId": 37,
+    "bookName": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "image": "https://m.media-amazon.com/images/I/51hRYjAJSGL._SY445_SX342_.jpg",
+    "review": "A dystopian novel where books are banned, and 'firemen' burn any that are found.",
+    "totalPages": 256,
+    "rating": 4.3,
+    "category": "Science Fiction",
+    "tags": [
+      "Dystopia",
+      "Classic",
+      "Philosophy"
+    ],
+    "publisher": "Ballantine Books",
+    "yearOfPublishing": 1953
+  },
+  {
+    "bookId": 38,
+    "bookName": "The Stranger",
+    "author": "Albert Camus",
+    "image": "https://m.media-amazon.com/images/I/41qcVmgPaKL._SY445_SX342_.jpg",
+    "review": "A philosophical novel exploring absurdism, as Meursault faces life, death, and the meaning of existence.",
+    "totalPages": 123,
+    "rating": 4.1,
+    "category": "Philosophy",
+    "tags": [
+      "Existentialism",
+      "Classic",
+      "Philosophical"
+    ],
+    "publisher": "Gallimard",
+    "yearOfPublishing": 1942
+  },
+  {
+    "bookId": 39,
+    "bookName": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327867269i/10210.jpg",
+    "review": "A coming-of-age novel that blends romance and gothic elements while exploring the struggles of an orphaned girl.",
+    "totalPages": 500,
+    "rating": 4.4,
+    "category": "Romance",
+    "tags": [
+      "Classic",
+      "Gothic",
+      "Romance"
+    ],
+    "publisher": "Smith, Elder & Co.",
+    "yearOfPublishing": 1847
+  },
+  {
+    "bookId": 40,
+    "bookName": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "image": "https://m.media-amazon.com/images/I/41gACtr2pyS._SY445_SX342_.jpg",
+    "review": "A gothic novel of passion, revenge, and the destructive effects of obsessive love.",
+    "totalPages": 326,
+    "rating": 4.1,
+    "category": "Fiction",
+    "tags": [
+      "Classic",
+      "Romance",
+      "Gothic"
+    ],
+    "publisher": "Thomas Cautley Newby",
+    "yearOfPublishing": 1847
+  },
+  {
+    "bookId": 41,
+    "bookName": "The Iliad",
+    "author": "Homer",
+    "image": "https://m.media-amazon.com/images/I/51rKgAZtqBL._SY445_SX342_.jpg",
+    "review": "An ancient epic that chronicles the Trojan War, Achilles' wrath, and the tragic fate of heroes.",
+    "totalPages": 683,
+    "rating": 4.2,
+    "category": "Classic",
+    "tags": [
+      "Epic",
+      "Mythology",
+      "Classic"
+    ],
+    "publisher": "Ancient Greece",
+    "yearOfPublishing": -762
+  },
+  {
+    "bookId": 42,
+    "bookName": "Medea",
+    "author": "Euripides",
+    "image": "https://m.media-amazon.com/images/I/51-aV2BBLgL._SY445_SX342_.jpg",
+    "review": "A powerful Greek tragedy about passion, betrayal, and revenge, centered on the heroine Medea.",
+    "totalPages": 45,
+    "rating": 4,
+    "category": "Drama",
+    "tags": [
+      "Classic",
+      "Tragedy",
+      "Greek"
+    ],
+    "publisher": "Ancient Greece",
+    "yearOfPublishing": -431
+  },
+  {
+    "bookId": 43,
+    "bookName": "The Odyssey",
+    "author": "Homer",
+    "image": "https://m.media-amazon.com/images/I/41neMHlK5SL._SY445_SX342_.jpg",
+    "review": "An ancient Greek epic poem that follows the adventures of Odysseus as he returns home from the Trojan War.",
+    "totalPages": 541,
+    "rating": 4.3,
+    "category": "Classic",
+    "tags": [
+      "Epic",
+      "Mythology",
+      "Adventure"
+    ],
+    "publisher": "Ancient Greece",
+    "yearOfPublishing": -725
+  },
+  {
+    "bookId": 44,
+    "bookName": "Les Misérables",
+    "author": "Victor Hugo",
+    "image": "https://m.media-amazon.com/images/I/411JYpEGhiL._SY445_SX342_.jpg",
+    "review": "A French historical novel that explores themes of justice, revolution, and redemption.",
+    "totalPages": 1463,
+    "rating": 4.6,
+    "category": "Historical Fiction",
+    "tags": [
+      "Classic",
+      "Revolution",
+      "Drama"
+    ],
+    "publisher": "A. Lacroix, Verboeckhoven & Cie",
+    "yearOfPublishing": 1862
+  },
+  {
+    "bookId": 45,
+    "bookName": "Moby-Dick",
+    "author": "Herman Melville",
+    "image": "https://m.media-amazon.com/images/I/4167uyie9yL._SY445_SX342_.jpg",
+    "review": "An epic tale of Captain Ahab's obsessive quest to kill the white whale, Moby Dick.",
+    "totalPages": 635,
+    "rating": 3.9,
+    "category": "Adventure",
+    "tags": [
+      "Classic",
+      "Adventure",
+      "Philosophy"
+    ],
+    "publisher": "Harper & Brothers",
+    "yearOfPublishing": 1851
+  },
+  {
+    "bookId": 46,
+    "bookName": "The Scarlet Letter",
+    "author": "Nathaniel Hawthorne",
+    "image": "https://m.media-amazon.com/images/I/81OthjkJBuL._AC_UY436_FMwebp_QL65_.jpg",
+    "review": "A historical novel about sin, guilt, and redemption in 17th-century Puritan Massachusetts.",
+    "totalPages": 272,
+    "rating": 3.8,
+    "category": "Historical Fiction",
+    "tags": [
+      "Classic",
+      "Romance",
+      "Drama"
+    ],
+    "publisher": "Ticknor, Reed & Fields",
+    "yearOfPublishing": 1850
+  },
+  {
+    "bookId": 47,
+    "bookName": "Great Expectations",
+    "author": "Charles Dickens",
+    "image": "https://m.media-amazon.com/images/I/41a0MqrLMeL._SY445_SX342_.jpg",
+    "review": "A coming-of-age novel that explores themes of wealth, love, and personal growth.",
+    "totalPages": 505,
+    "rating": 4,
+    "category": "Fiction",
+    "tags": [
+      "Classic",
+      "Drama",
+      "Social Criticism"
+    ],
+    "publisher": "Chapman & Hall",
+    "yearOfPublishing": 1861
+  },
+  {
+    "bookId": 48,
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://m.media-amazon.com/images/I/71KilybDOoL._AC_UY436_FMwebp_QL65_.jpg",
+    "review": "A novel about teenage rebellion and alienation, centered on the life of Holden Caulfield.",
+    "totalPages": 277,
+    "rating": 3.2,
+    "category": "Fiction",
+    "tags": [
+      "Classic",
+      "Coming of Age",
+      "Drama"
+    ],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+  },
+  {
+    "bookId": 49,
+    "bookName": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "image": "https://m.media-amazon.com/images/I/51BIy5U+dsL._SY445_SX342_.jpg",
+    "review": "A tragic love story set against the backdrop of Russian aristocratic society.",
+    "totalPages": 964,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": [
+      "Classic",
+      "Romance",
+      "Tragedy"
+    ],
+    "publisher": "The Russian Messenger",
+    "yearOfPublishing": 1877
+  },
+  {
+    "bookId": 50,
+    "bookName": "Lolita",
+    "author": "Vladimir Nabokov",
+    "image": "https://media.newyorker.com/photos/590969d0019dfc3494ea12c5/master/w_1600,c_limit/008_geetika_alok.jpg",
+    "review": "A controversial novel about obsession, love, and the abuse of power.",
+    "totalPages": 336,
+    "rating": 2.6,
+    "category": "Fiction",
+    "tags": [
+      "Classic",
+      "Psychological",
+      "Controversial"
+    ],
+    "publisher": "Olympia Press",
+    "yearOfPublishing": 1955
+  }
+]
