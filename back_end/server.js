@@ -1,6 +1,6 @@
-import express from 'express';
-import cors from 'cors';
-import products, { find } from './products.json';
+const express = require('express');
+const cors = require('cors');
+const products = require('./products.json');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -16,7 +16,7 @@ app.get('/api/products', (req, res) => {
 // Endpoint to get a specific product by ID
 app.get('/api/products/:id', (req, res) => {
   const productId = parseInt(req.params.id);
-  const product = find(p => p.id === productId);
+  const product = products.find(p => p.id === productId);
 
   if (product) {
     res.json(product);
