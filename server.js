@@ -14,10 +14,10 @@ app.get('/api/products', (req, res) => {
 });
 
 // Endpoint to get a specific product by ID
-app.get('/api/products/:id', (req, res) => {
+app.get('/api/product/:id', (req, res) => {
   const productId = parseInt(req.params.id);
-  const product = products.find(p => p.id === productId);
-
+  const product = products.find(p => p.bookId === productId);
+  console.log(req.params.id)
   if (product) {
     res.json(product);
   } else {
